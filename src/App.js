@@ -1,6 +1,7 @@
 import './App.css';
 import Navigation from './components/Navigation';
 import Card from './components/Card';
+import Section from './components/Section';
 import logo from './logo.svg';
 
 export default function App() {
@@ -22,14 +23,8 @@ export default function App() {
 
         <div className="content">
           <article className='content__article'>
-            <section>
-              <h2 className='content__title'>Services</h2>
-              <p className='content__paragraph'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non nisl vel velit convallis accumsan ut sit amet est. Nullam sit amet fermentum magna. Duis finibus congue quam nec rhoncus. Ut id dignissim orci.</p>
-            </section>
-            <section>
-              <h3 className='content__sub-header'>Sub Header</h3>
-              <p className='content__paragraph'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non nisl vel velit convallis accumsan ut sit amet est. Nullam sit amet fermentum magna. Duis finibus congue quam nec rhoncus. Ut id dignissim orci.</p>
-            </section>
+            <Section sectionType="title" nameTitle="Section" sectionText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non nisl vel velit convallis accumsan ut sit amet est. Nullam sit amet fermentum magna. Duis finibus congue quam nec rhoncus. Ut id dignissim orci"/>
+            <Section sectionType="sub-header" nameTitle="Sub-header" sectionText="consectetur adipiscing elit. asdasdad asda  ljsdad alskjdalsdj lasjdlaksjlakdj asda ntum magna. Duis finibus congue quam nec rhoncus. Ut id dignissim orci"/>     
           </article>
           <Navigation navType='secondary' />
         </div>
