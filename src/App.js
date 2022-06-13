@@ -1,5 +1,6 @@
 import './App.css';
 import Navigation from './components/Navigation';
+import Card from './components/Card';
 import logo from './logo.svg';
 
 export default function App() {
@@ -14,18 +15,9 @@ export default function App() {
       </header>
       <main>
         <div className='cards'>
-          <article className='card'>
-            <h2 className='card__title'>About</h2>
-            <p className='card__paragraph'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non nisl vel velit convallis accumsan ut sit amet est. Nullam sit amet fermentum magna. Duis finibus congue quam nec rhoncus. Ut id dignissim orci.</p>
-          </article>
-          <article className='card'>
-            <h2 className='card__title'>Company</h2>
-            <p className='card__paragraph'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non nisl vel velit convallis accumsan ut sit amet est. Nullam sit amet fermentum magna. Duis finibus congue quam nec rhoncus. Ut id dignissim orci.</p>
-          </article>
-          <article className='card'>
-            <h2 className='card__title'>Services</h2>
-            <p className='card__paragraph'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non nisl vel velit convallis accumsan ut sit amet est. Nullam sit amet fermentum magna. Duis finibus congue quam nec rhoncus. Ut id dignissim orci.</p>
-          </article>
+         <Card cardTitle='About' cardText='about about about about about about about about about about' />
+         <Card cardTitle='Company'cardText='Company copany cmpanuy compnay company company company' />
+         <Card cardTitle='Sevices'cardText='Services services services services services services services'/>             
         </div>
 
         <div className="content">
