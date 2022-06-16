@@ -17,13 +17,7 @@ a {
   background-color: white;
 }
 
-.header__hero {
-  padding: 150px 0;
-  font-size: 4em;
-  text-align: center;
-  background-color: rgb(160, 219, 104);
-  color: white;
-}
+
 
 .header__logo {
   height: 30px;
@@ -40,6 +34,14 @@ a {
 .content__article {
   flex: 2;
   margin-right: 2em;
+}
+
+.header__hero {
+  padding: 150px 0;
+  font-size: 4em;
+  text-align: center;
+  background-color: rgb(160, 219, 104);
+  color: white;
 }
 
 
