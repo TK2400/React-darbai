@@ -1,25 +1,21 @@
 export default function Komponentas(props) {
-    if (props.title) {
-        return (
-            <div>
-                <h3>
-                    {props.tekstas}
+    const elementai = [
+        'Section 80',
+        'Bookkeepers',
+        'Zero'
+    ];
 
-                </h3>
-                <p>
-                    Tekstas visdada matomas
-                </p>
-            </div>
-        )
-    } return (
+    return (
         <div>
-            <p>
-                Tekstas visdada matomas
-            </p>
+            {props.title && <h3>{props.title}</h3>}
+            <p>Tekstas visada matomas</p>
+            <article>
+                {elementai.map((verte, index) => <h4 key={index}>{verte}</h4>)}
+            </article>
         </div>
-    )
-
-
-
-
+    );
 }
+
+
+
+

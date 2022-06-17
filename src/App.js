@@ -31,7 +31,7 @@ export default function App() {
       <main>
         <div className='cards'>
           {cardsData.map((el) => {
-            return <Card cardTitle={el.cardTitle} cardText={el.cardText} />
+            return <Card key={el.cardText} cardTitle={el.cardTitle} cardText={el.cardText} />
           })}
 
         </div>
